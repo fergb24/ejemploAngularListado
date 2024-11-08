@@ -1,0 +1,10 @@
+<div class="card">
+    <div class="card-header">
+        Cliente: {{clienteDetalle.name}} {{clienteDetalle.apellido}}
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Correo electrónico: {{clienteDetalle.email}}</h5>
+        <p class="card-text">Teléfono: {{clienteDetalle.movil}} </p>
+        <button class="btn btn-primary" (click)="eliminarClick(clienteDetalle.name + ' ' + clienteDetalle.apellido)">Eliminar cliente</button>
+    </div>
+</div>  
